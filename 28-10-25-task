@@ -1,0 +1,80 @@
+EXAMPLE FOR INLINE JS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('button clicked')">click me</button>
+</body>
+</html>
+
+
+EXAMPLE FOR INTERNAL JS
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("internal javascript code")
+    </script>
+</body>
+</html>
+
+
+EXAMPLE FOR EXTERNAL JS
+
+
+
+INDEX.HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./external.js">
+    </script>
+</body>
+</html>
+
+EXTERNAL.JS
+
+console.log("external java script code is running")
+document.writeln("external javascript code")
+
+
+VARIABLES TASK
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name;
+        var age;
+        var city;
+        name='praveen'
+        age=22
+        city="Hyderabad"
+        document.write('Name:',name,'Age:',age,'City:',city)
+    </script>
+</body>
+</html>
