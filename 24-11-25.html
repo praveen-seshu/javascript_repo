@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./submit.html" method="post" enctype="multipart/form-data">
+        <label for="password">Enter Password:</label>
+        <input type="text" name="password" id="password"> <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        var strength=""
+        var p=0
+        let f=document.getElementsByTagName('form')
+        let e=document.getElementsByTagName('input')
+         e[0].addEventListener('input',function(k){
+            p = k.target.value
+           if ( (p.length) <= 4){
+            strength="weak"
+            console.log("weak password")
+           }
+           else if (p.length <=7){
+            strength="medium"
+            console.log("Medium password")
+           }
+           else{
+            strength="strong"
+            console.log("Strong password")
+           }
+
+           
+         })
+         f[0].addEventListener('submit',function(e){
+            if (strength != "strong"){
+                 e.preventDefault();
+                 console.log(p ,"is",strength,"should be strong" )
+            }
+         })
+         
+    </script>
+</body>
+</html>
